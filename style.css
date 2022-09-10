@@ -1,1 +1,56 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header ads"
+    "nav article article"
+    "nav footer footer";
+  grid-template-rows: 180px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 8px;
+  grid-column-gap: 8px;
+  padding: 8px;
+  height: 100vh;
+  margin: auto;
+  background-color: rgba(100, 100, 40, 1);
+  background: url(https://secure.img1-cg.wfcdn.com/im/69373027/resize-w750%5Ecompr-r85/1278/127848537/Abstract+Double+Roll+%2528Three+11%2527+Panels%2529+Wallpaper.jpg);
+  color:azure;
+  }  
+header, footer, article, nav, div {
+  padding: 1.6em;
+  background-color: rgba(100, 20, 30, .8);
+  border-radius: 14px;
+  }
+#pageHeader {
+  grid-area: header;
+  text-align: center;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#profilePicture { 
+  border-radius: 14px;
 
+  } 
+img {
+  border-radius: 14px;
+  
+}
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
