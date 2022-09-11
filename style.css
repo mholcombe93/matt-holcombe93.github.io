@@ -1,11 +1,11 @@
 body { 
   display: grid;
   grid-template-areas: 
-    "header header ads"
+    "header header me"
     "nav article article"
     "nav footer footer";
-  grid-template-rows: 180px 1fr 70px;  
-  grid-template-columns: 20% 1fr 15%;
+  grid-template-rows: 180px 1fr 80px;  
+  grid-template-columns: 20% 3fr 1fr;
   grid-row-gap: 8px;
   grid-column-gap: 8px;
   padding: 8px;
@@ -14,6 +14,7 @@ body {
   background-color: rgba(100, 100, 40, 1);
   background: url(https://secure.img1-cg.wfcdn.com/im/69373027/resize-w750%5Ecompr-r85/1278/127848537/Abstract+Double+Roll+%2528Three+11%2527+Panels%2529+Wallpaper.jpg);
   color:azure;
+  font-family: 'Poiret One', cursive;
   }  
 header, footer, article, nav, div {
   padding: 1.6em;
@@ -35,11 +36,27 @@ header, footer, article, nav, div {
   }
 #profilePicture { 
   border-radius: 14px;
-
+  padding-bottom: 130px;
   } 
 img {
   border-radius: 14px;
+  float:none;
+  margin-bottom: 20px;
+}
+ul{
   
+}
+li{
+margin-top: 1.5em;
+margin-bottom: 1.5em;
+list-style-type: circle;
+}
+a {
+color: azure;
+text-decoration: none;
+}
+h1{
+  font-style: bold;
 }
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
@@ -47,10 +64,11 @@ img {
     grid-template-areas: 
       "header"
       "article"
-      "ads"
+      "me"
       "nav"
       "footer";
     grid-template-rows: 80px 1fr 70px 1fr 70px;  
     grid-template-columns: 1fr;
+    background-color: rgba(100, 100, 40, 1);
  }
 }
