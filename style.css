@@ -34,10 +34,15 @@ header, footer, article, nav, div {
 #mainNav { 
   grid-area: nav; 
   }
+
+
 #profilePicture { 
   border-radius: 14px;
   padding-bottom: 130px;
   } 
+
+
+
 img {
   border-radius: 14px;
   float:none;
@@ -58,6 +63,9 @@ text-decoration: none;
 h1{
   font-style: bold;
 }
+
+
+
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
   body { 
